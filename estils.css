@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    align-items: center;
+
+}
+
+/*he afegit això per personalitzar la font*/
+@font-face {
+    font-family: "Montaga";
+    src: url("<link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">");
+  }
+
+body {
+    font-family: "Montaga", serif;
+}
+
+/*Barra de navegació*/
+
+.barra {
+    background: rgba(222, 121, 30, 0.00);
+    height: 200%;
+    position: relative;
+}
+
+/*alguns items de la barra, assignatures*/
+.items{
+    margin-left: 3.5%;
+    margin-top: 2%;
+    position: relative;
+    display: inline-flex;
+}
+
+/*tots els items de la barra*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200%;
+}
+
+/*fa referència als items enllaçats*/
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #da9e6a
+}
+
+/*items de la llista*/
+nav ul{
+    display:inline-flex;
+}
+
+/*per fixar la posició del logo*/
+nav .logo{
+    
+    width: 9%;
+    height: 100%;
+    text-align: left;
+    position: absolute;
+    float: left;
+}
+
+/*cada un dels items de la llista*/
+.items li{
+    list-style: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 15px;
+    color:#000000;
+    padding-top: 1%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+/*caixa que englova la resta de contingut*/
+.capcalera{
+    background: #ffffff url('imatges/ellipseblur.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+/*caixa titol i imatge pantalla hero*/
+.envoltura{
+    margin: 10%;
+    padding: 10%;
+}
+/*fa referència al títol i paràgraf de la portada*/
+header {
+    display:flex;
+    align-items: center;
+  }
+
+  /*fa referència al títol*/
+header h1 {
+    font-weight:lighter;
+    font-size: 600%;
+    color: #000000;
+    text-align: center;
+    position: absolute;
+    margin-top: 6%;
+    padding-top: -10%;
+  }
+
+  /*fa referència al paragràf inicial*/
+header .paragraf {
+    font-size: 180%;
+    line-height: 180%;
+    text-align: center;
+    color: #000000;
+   /position: absolute;
+    margin-top: 28%;
+    padding-top: 5%;
+  }
+
+  }
+
+  /*caixa que engloba títol i paràgraf inicial*/
+  .continguthero{
+    width: 90%;
+    margin: 25%, 10%, 25%, 10%;
+    text-align: center;
+    
+  }
+
+/*fa referència al títol de cada pàgina*/
+.nom {
+    background-color:white;
+    font-size: 250%;
+    margin-right: 50%;
+    color:#000000;
+    text-align: left;
+    font-weight: 550;
+    float: right;
+    width: 50%;
+    padding: 2%;
+    padding-left: 15%;
+    padding-top: 5%;
+    position: relative;
+    
+}
+
+/*fa referència al text de cada pàgina*/
+.text{
+    background-color:white;
+    font-size: 120%;
+    color:#000000;
+    text-align: left;
+    font-weight: normal;
+    float: left;
+    width: 50%;
+    padding: 2%;
+    padding-left: 15%;
+    position: relative;
+    text-align: justify;
+    line-height: 200%;
+}
+
+/*fa referència al subtítol de la pantalla: qui sóc?*/
+.subtitol {
+    background-color:white;
+    font-size: 160%;
+    margin-right: 50%;
+    color:#000000;
+    text-align: left;
+    font-weight: 450;
+    float: left;
+    width: 50%;
+    padding: 2%;
+    padding-left: 15%;
+    padding-top: 1%;
+    position: relative;
+    
+}
+
+/*fa referència a les imatges verticals*/
+.verti{
+    float: right; 
+    margin-right: 15%;
+    margin-top: -5%;
+    padding-top: -5%;
+}
+
+/*fa referència a les imatges horitzontals*/
+.horit{
+    float: right; 
+    margin-right: 10%;
+    margin-top: 0%;
+}
+
+/*fa referència a la imatge de fons de la portada*/
+header .imatgehero{
+    position: absolute;
+}
+
+/*fa referència a les imatges de tic*/
+main {
+    position: relative;
+    float: right; 
+    margin-right: 15%;
+    margin-top: -5%;
+    padding-top: -5%;
+
+}
+
+/*animació zoom imatges verticals*/
+.verti:hover {
+    transform: scale(1.1);
+    transition-duration: 1.2s;
+}
+
+/*animació zoom imatges horitzontals*/
+.horit:hover:hover {
+    transform: scale(1.1);
+    transition-duration: 1.2s;
+}
+
+/*fa referència a la imatge que es posa a sobre quan es passa el ratolí*/
+.top {
+    position: absolute;
+    float: right; 
+    margin-right: 15%;
+    margin-top: -5%;
+    padding-top: -5%;
+}
+
+/*fa referència a la imatge de sota quan es passa el ratolí*/
+.top img {
+    opacity: 0;
+}
+/*també fa referència a la imatge que es posa a sobre però quan el ratolí és a sobre*/
+.top img:hover {
+    opacity: 1;
+
+}
+
